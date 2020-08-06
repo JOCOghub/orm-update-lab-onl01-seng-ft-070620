@@ -17,6 +17,13 @@ class Student
       grade TEXT, 
      SQL
      DB[:conn].execute(self.id, slef.name, self.grade)
+  end  
+  
+  def self.drop_table 
+    sql = "DROP TABLE students"
+    DB[:conn].execute(sql)
   end   
+    
+    
 
 end
