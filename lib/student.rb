@@ -14,7 +14,7 @@ class Student
       CREATE TABLE(
       id PRIMARY INTEGER KEY,
       name TEXT,
-      grade TEXT, 
+      grade TEXT)
      SQL
      DB[:conn].execute(self.id, slef.name, self.grade)
   end  
@@ -24,6 +24,6 @@ class Student
     DB[:conn].execute(sql)
   end   
     
-    
+  def save 
 
 end
